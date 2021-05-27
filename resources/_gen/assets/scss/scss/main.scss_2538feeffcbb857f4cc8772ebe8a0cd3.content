@@ -1,0 +1,13 @@
+/* ABSTRACTS */
+/* LAYOUTS */
+main {
+  margin-top: 56px; }
+
+.hero {
+  padding: 25px 0;
+  height: calc(100vh - 50px); }
+  .hero .card {
+    height: 100%; }
+
+footer {
+  background: #f5f5f5; }

@@ -1,0 +1,25 @@
+<!-- 
+PROJECT: Codeboxx Hugo Landing Page
+VERSION: 1.0.0
+AUTHOR: Dominic Michaud
+-->
+
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default `en-US` }}">
+
+<head>
+	{{ partial "head.html" . }}
+	{{ partialCached "style.html" . }}
+	<base href="{{ .Site.BaseURL }}">
+</head>
+
+<body>
+    {{ partial "header.html" . }}
+    <main>
+		{{ block "main" . }}{{ end }}
+	</main>
+    {{ partial "footer.html" . }}
+	{{ partialCached "script.html" . }}
+</body>
+
+</html>
